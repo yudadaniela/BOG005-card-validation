@@ -1,0 +1,47 @@
+body{
+    background:#fcebda;
+}
+header{
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background: url(https://www.piedrasymostacillas.com/wp-content/uploads/2019/09/324.jpeg); 
+    font-size:50px;
+    margin: -50px 0 50px -20px;
+    height: 150px;
+}
+.menu li{
+    list-style: none;
+    padding: 5px;
+    font: bold 14px verdana;
+    color: black;
+    display: inline-block;
+
+}
+.pagoTarj{
+    border:1px solid black;
+    padding: 40px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    background: #fff2cc;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.tituloFor{
+    font: bold 14px verdana;
+    color: black;
+
+}
+/*
+.titulo{
+    margin: 30px 0 50px -20px; 
+    padding-top: 10px ;
+}
+ */
+ 
+
+
+
+/**/

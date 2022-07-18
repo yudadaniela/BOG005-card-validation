@@ -2,13 +2,66 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <title>Tarjeta de crédito valida</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
+  </head class="header">
   <body>
-    <header></header>
-    <main></main>
+    <div class="cuerpo">
+    <header>
+      <h1> <em class="titulo"> MIYUKI </em></h1>
+       <nav class="menu">
+        <ul>
+          <li>Principal</li>
+          <li>Métodos de Pago</li>
+          <li>Contactanos</li>
+        </ul>
+       </nav>     
+    </header>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <main>
+      <aside class="pagoTarj">
+      <form action="" class="formulario">
+        <div class="tituloFor">
+          <label for="">Pago con Tarjeta de Crédito</label>
+        </div>
+        <hr>
+        
+        <div class="nombre">
+          <label for="nombreTit">Nombre del Titular </label>
+          <input type="text" autocomplete="off">
+        </div>
+        <br>
+
+        <div class="numerot">
+          <label for="">Número de Tarjeta </label>
+          <input id="number" type="number"
+          placeholder="0000000000000000">
+        </div>
+
+        <br>
+
+        <div class="fechaven">
+          <label for="">Fecha de vencimiento </label>
+          <input  type="month">
+        </div>
+
+        <br>
+        <button id="validar">SEND</button> 
+       <!--<button type="button"
+         onclick="">SEND</button>--> 
+      </form>
+    </aside>
+    </main>
+
+
     <footer></footer>
     <script src="index.js" type="module"></script>
+  </div>
+
+  
   </body>
 </html>
