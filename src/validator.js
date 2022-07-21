@@ -2,39 +2,70 @@ const validator =  {
    // ...FUNCION ISVALID
    
    isValid : (ccnumber) =>{
-    const numdig = ccnumber.length;
+    let numdig = ccnumber.length;
     let suma = 0;
-    const total = 0;
+    let total = 0;
     var result = false;
-    
-    if (numdig>14 && numdig<=16) {
-       
+    //Si numero es mayor a 14 o menor que 16
+    if (numdig>=10 && numdig<=16) {
+      let vectorinver ="";
+      let vectoroper = ["","","","","","","","","","","","","","","","",];
+     
+// inversa del vector 
        for(let i = 15; i>=0; i--){
-        let vectorinver = parseInt(ccnumber[i]);
-      }
+        vectorinver += ccnumber[i];
+        
+       }
+      console.log(vectorinver);
 
-      for(let j=0; j<numdig; j++) {
-        if (j%2 === 0){
-          vectorinver*=2;
+//De string a array, multiplicacion y suma de digitos 
+      for(let j=0; j<vectorinver.length; j++) {
+        vectoroper[j]=parseInt(vectorinver[j]);
+
+        //console.log(vectorinver[j]);
+        //console.log(vectoroper[j]);
+        if (j%2 !== 0){
+        vectoroper[j]=vectoroper[j]*2;
+          //console.log(vectoroper[j]);
         }
-          if (vectorinver[j]>9) { //verificar si  esta escrito correctamente 
-            vectorinver -=9;  //verificar si esta escrito correctamente 
-          }    
-        suma += vectorinver
-      }
-    } else { 
-      result = false;
-    }
-    total = suma % 10;
-    if (total===0) {
-      result = true;
-    } else { 
-      result = false;
-    }
-    return result;
-  }
-  // ...FUNCION MASCARA
-};
+        if (vectoroper[j]>9) { 
+          vectoroper[j] -=9;  
+        } 
 
+        //console.log(vectoroper[j]);
+
+        suma += vectoroper[j];
+        
+      }
+     // console.log(suma);
+     //operacion de residuo y resultado
+    total = suma % 10;
+    //console.log(total);
+    if(total===0){
+      result=true
+    }else{
+      result=false
+    }
+//Numeros no validos 
+    }else{
+      return result
+    }
+    
+    return result;
+  },
+  // ...FUNCION MASCARA------------------------------------------------------------------------------------------
+    maskify : (ccnumber) =>{
+     
+    let numdig = ccnumber.length;
+    let frontdigit = numdig-4;
+    let masksymbol = "#";
+    let lastdigit =ccnumber.slince(-4);
+    console.log(numdig);
+
+    
+    }
+  
+
+};
 
 export default validator;

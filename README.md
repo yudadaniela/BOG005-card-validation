@@ -226,3 +226,8 @@ Scrum en menos de 2 minutos
 Scrum en Detalle. No esperamos que hagas todo eso desde este proyecto. Iremos profundizando poco a poco a lo largo del -bootcamp.
 Blog: cómo funciona el algoritmo de Luhn.
 Únete al canal de Slack #project-card-validation
+
+---
+
+MIYUKI
+Es un emprendimiento que quiero realizar con mi mamá y trata de la venta de tejidos miyuki(pulseras, anillos, aretes), lo que se busca es una forma de marketing con una pagina web para hacer conocer el producto a los usuarios que esten interesados.
