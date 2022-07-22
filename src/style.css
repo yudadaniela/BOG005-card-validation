@@ -34,6 +34,36 @@ header{
     color: black;
 
 }
+.valida{
+    border:1px solid black;
+    padding: 40px;
+    width: 400px;
+    display: none;
+    justify-content: center;
+    background: white;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.invalida{
+    border:1px solid black;
+    padding: 40px;
+    width: 400px;
+    display: none;
+    justify-content: center;
+    background: white;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto; 
+}
+.titulova{
+font:bold 40px verdana;
+color: green;
+}
+.tituloin{
+    font:bold 40px verdana;
+    color: red;
+}
 /*
 .titulo{
     margin: 30px 0 50px -20px; 

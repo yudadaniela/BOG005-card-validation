@@ -57,12 +57,38 @@ const validator =  {
     return result;
   },
   // ...FUNCION MASCARA------------------------------------------------------------------------------------------
+   
     maskify : (ccnumber) =>{
-     
-    let frontdigit = ccnumber.length-4;
-    let masksymbol = "#";
-    let lastdigit =ccnumber.slince(-4);
-    let numaskify = masksymbol.repeat(frontdigit)+ lastdigit;
+    let digit=ccnumber.length
+    let lastdigit=""; 
+    let numaskify="";
+    let masksymbol="";
+    let frontdigit = digit-4;
+    //console.log(frontdigit);
+    
+    if(digit<=4){
+      numaskify=ccnumber;
+    }else{
+
+    for (let i=frontdigit; i<digit ;i++) {
+       lastdigit +=ccnumber[i];
+         
+        }
+        //console.log(lastdigit);
+
+        for(let j=0;j<frontdigit;j++){
+          masksymbol+='#';
+        }
+    //console.log(masksymbol);
+    
+    numaskify=masksymbol+lastdigit;
+  }      
+    /*let masksymbol = '#';
+    let lastdigit =a.slice(-4);
+    //console.log(lastdigit);
+    let numaskify = masksymbol.repeat(4);
+    console.log=(numaskify);*/
+
 
     return numaskify;
     
