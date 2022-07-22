@@ -6,24 +6,27 @@ const validator =  {
     let suma = 0;
     let total = 0;
     var result = false;
+
+    console.log(numdig);
+    
     //Si numero es mayor a 14 o menor que 16
-    if (numdig>=10 && numdig<=16) {
+    if (numdig>9 && numdig<=16) {
       let vectorinver ="";
       let vectoroper = ["","","","","","","","","","","","","","","","",];
      
 // inversa del vector 
-       for(let i = 15; i>=0; i--){
+       for(let i = (numdig-1); i>=0; i--){
         vectorinver += ccnumber[i];
         
        }
       console.log(vectorinver);
 
 //De string a array, multiplicacion y suma de digitos 
-      for(let j=0; j<vectorinver.length; j++) {
+     for(let j=0; j<vectorinver.length; j++) {
         vectoroper[j]=parseInt(vectorinver[j]);
 
         //console.log(vectorinver[j]);
-        //console.log(vectoroper[j]);
+        console.log(vectoroper[j]);
         if (j%2 !== 0){
         vectoroper[j]=vectoroper[j]*2;
           //console.log(vectoroper[j]);
@@ -56,11 +59,13 @@ const validator =  {
   // ...FUNCION MASCARA------------------------------------------------------------------------------------------
     maskify : (ccnumber) =>{
      
-    let numdig = ccnumber.length;
-    let frontdigit = numdig-4;
+    let frontdigit = ccnumber.length-4;
     let masksymbol = "#";
     let lastdigit =ccnumber.slince(-4);
-    console.log(numdig);
+    let numaskify = masksymbol.repeat(frontdigit)+ lastdigit;
+
+    return numaskify;
+    
 
     
     }

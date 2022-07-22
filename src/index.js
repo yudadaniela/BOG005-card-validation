@@ -9,6 +9,8 @@ boton[0].addEventListener('click', function (){
     console.log(validator['isValid'](ccnumber))
 
     console.log(validator['maskify'](ccnumber))
+    document.querySelector(".texto").innerHTML= " Su tarjeta "+numaskify;
+
 })
 
 
