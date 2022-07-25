@@ -22,7 +22,7 @@ MIYUKI es un técnica de tejido muy delicado con mostacilla para producir manill
 
 - **¿Quien es nuestro usuari@?**
 
-  Todo usuario que quiera adquirir nuestros productos o conocerlos, es una forma de hacer marketing digital y que mas personas de cualquier parte del pais puedan acceder a ellos y pagar con tarjeta de credito.
+  Toda persona que quiera adquirir nuestros productos o conocernos. Es una forma de hacer marketing digital y que mas personas de cualquier parte del pais puedan acceder a ellos y pagar con tarjeta de credito.
 
 - **¿Cuales son los objetivos en relacion con el producto?**
 

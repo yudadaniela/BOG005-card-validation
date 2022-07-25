@@ -19,10 +19,6 @@ boton[0].addEventListener("click", function () {
     document.getElementById("invalidaId").style.display = "flex";
     document.querySelector("#textTwo").innerHTML = " Su tarjeta No. " + maskify;
   }
-
-  console.log(validation);
-
-  console.log(maskify);
 });
 
 console.log(validator);
