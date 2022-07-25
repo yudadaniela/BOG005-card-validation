@@ -11,9 +11,13 @@ boton[0].addEventListener("click", function () {
   //alert(ccnumber);
 
   if (validation === true) {
-    document.querySelector("#pagoTarjId").style.display = "none";
+    document.getElementById("pagoTarjId").style.display = "none";
     document.getElementById("validaId").style.display = "flex";
     document.querySelector("#textOne").innerHTML = " Su tarjeta No. " + maskify;
+  } else {
+    document.getElementById("pagoTarjId").style.display = "none";
+    document.getElementById("invalidaId").style.display = "flex";
+    document.querySelector("#textTwo").innerHTML = " Su tarjeta No. " + maskify;
   }
 
   console.log(validation);
